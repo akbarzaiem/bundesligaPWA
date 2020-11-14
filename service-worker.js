@@ -19,6 +19,7 @@ workbox.precaching.precacheAndRoute([
     { url: '/image/football-badge.png', revision: '1' },
     { url: '/image/star.png', revision: '1' },
     { url: '/image/trophy.png', revision: '1' },
+    { url: '/image/question.png', revision: '1' },
     { url: '/icon1.png', revision: '1' },
     { url: '/icon2.png', revision: '1' },
     { url: '/manifest.json', revision: '1' }
