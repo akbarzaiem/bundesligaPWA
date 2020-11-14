@@ -149,7 +149,7 @@ function getFavoriteTeams() {
  </div>
  `;
     });
-    if (data.length == 0) html += '<h5 class="center-align">Tidak ada tim favorit yang disimpan!</5>'
+    if (data.length === 0) html += '<h5 class="center-align">Tidak ada tim favorit yang disimpan!</5>'
     document.getElementById("preloader").innerHTML = html;
     document.getElementById("fav-teams").innerHTML = html;
   });
