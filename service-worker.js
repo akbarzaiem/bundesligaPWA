@@ -35,7 +35,7 @@ workbox.routing.registerRoute(
 workbox.routing.registerRoute(
     /.*(?:png|gif|jpg|jpeg|svg)$/,
     workbox.strategies.cacheFirst({
-        cacheName: 'image-cache',
+        cacheName: 'image',
         plugins: [
             new workbox.cacheableResponse.Plugin({
                 statuses: [0, 200]
