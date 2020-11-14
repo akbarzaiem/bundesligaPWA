@@ -112,7 +112,7 @@ var getAllTeams = () => {
                    <div class="center"><img width="50" height="50" alt="tim" src="${team.crestUrl}"></div>
                    <div class="center"><b>${team.name}</b> </div>
                    <div class="card-action center">
-                   <a class="waves-effect waves-light btn blue" onclick="tambahTeamListener(${team.id})"><img src="/image/star.png" alt="st" height="15px"> Tambah ke Favorit</a>
+                   <a class="waves-effect waves-light btn blue" onclick="tambahTeamListener(${team.id})"><img src="./image/star.png" alt="st" height="15px"> Tambah ke Favorit</a>
                    </div>
             </div>
             </div>
