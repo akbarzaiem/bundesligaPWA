@@ -142,7 +142,7 @@ function getFavoriteTeams() {
      <div class="center">Stadion : ${team.venue}</div>
      <div class="center"><a href="${team.website}" target="_blank">${team.website}</a></div>
      <div class="card-action center">
-     <a class="waves-effect waves-light btn red" onclick="hapusTeamListener(${team.id})"><i class="material-icons right"></i><img src=./image/star.png" alt="st" height="15px"> Hapus dari Favorit</a>
+     <a class="waves-effect waves-light btn red" onclick="hapusTeamListener(${team.id})"><i class="material-icons right"></i><img src="./image/star.png" alt="st" height="15px"> Hapus dari Favorit</a>
      </div>
      
  </div>
