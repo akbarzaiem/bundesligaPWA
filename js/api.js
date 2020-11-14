@@ -112,7 +112,7 @@ var getAllTeams = () => {
                    <div class="center"><img width="50" height="50" alt="tim" src="${team.crestUrl}"></div>
                    <div class="center"><b>${team.name}</b> </div>
                    <div class="card-action center">
-                   <a class="waves-effect waves-light btn blue" onclick="tambahTeamListener(${team.id})"><img src="./image/star.png" alt="st" height="15px"> Tambah ke Favorit</a>
+                   <a class="waves-effect waves-light btn blue" onclick="tambahTeamListener(${team.id})"><img src="/image/star.png" alt="st" height="15px"> Tambah ke Favorit</a>
                    </div>
             </div>
             </div>
@@ -142,7 +142,7 @@ function getFavoriteTeams() {
      <div class="center">Stadion : ${team.venue}</div>
      <div class="center"><a href="${team.website}" target="_blank">${team.website}</a></div>
      <div class="card-action center">
-     <a class="waves-effect waves-light btn red" onclick="hapusTeamListener(${team.id})"><i class="material-icons right"></i><img src="./image/star.png" alt="st" height="15px"> Hapus dari Favorit</a>
+     <a class="waves-effect waves-light btn red" onclick="hapusTeamListener(${team.id})"><i class="material-icons right"></i><img src="/image/star.png" alt="st" height="15px"> Hapus dari Favorit</a>
      </div>
      
  </div>
