@@ -31,3 +31,19 @@ workbox.routing.registerRoute(
     new RegExp('https://api.football-data.org/v2/'),
     workbox.strategies.staleWhileRevalidate()
 );
+
+workbox.routing.registerRoute(
+    /.*(?:png|gif|jpg|jpeg|svg)$/,
+    workbox.strategies.cacheFirst({
+      cacheName: 'image-cache',
+      plugins: [
+        new workbox.cacheableResponse.Plugin({
+          statuses: [0, 200]
+        }),
+        new workbox.expiration.Plugin({
+          maxEntries: 100,
+          maxAgeSeconds: 30 * 24 * 60 * 60,
+        }),
+      ]
+    })
+  );
