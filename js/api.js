@@ -231,7 +231,7 @@ var tambahTeamListener = teamId => {
 
 var hapusTeamListener = teamId => {
   var confirmation = confirm("Hapus tim ini?")
-  if (confirmation == true) {
+  if (confirmation === true) {
     hapusTeam(teamId);
     console.log(teamId + "telah dihapus")//console
   }

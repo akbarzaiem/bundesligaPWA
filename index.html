@@ -6,9 +6,11 @@
     <title>Bundesliga Jerman</title>
     <meta name="description" content="My first PWA" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="preconnect" href="https://storage.googleapis.com">
     <link rel="preconnect" href="https://crests.football-data.org">
     <link rel="stylesheet" href="css/materialize.min.css" />
     <link rel="manifest" href="/manifest.json" />
+    <link rel="apple-touch-icon" href="./icon1.png">
     <meta name="theme-color" content="#00897B" />
 </head>
 
@@ -50,11 +52,6 @@
         } else {
             console.log("ServiceWorker belum didukung browser ini.");
         }
-
-        // // REQUEST API UNTUK PERTAMA KALI
-        // document.addEventListener("DOMContentLoaded", function () {
-        //     getArticles();
-        // });
 
         function requestPermission() {
             Notification.requestPermission().then(function (result) {
